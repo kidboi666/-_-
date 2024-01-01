@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+  header {
+    background-color: aqua;
+    height: 30px;
+    overflow: hidden;
+    transition: height .5s;
+  }
+  #nav_wrap {
+    display: flex;
+    justify-content: space-around;
+  }
+  #menu_wrap {
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav id="nav_wrap">
+    <li id="menu_wrap">menu
+      <ul>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+      </ul>
+    </li>
+    <li id="menu_wrap">menu
+      <ul>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+      </ul>
+    </li>
+    <li id="menu_wrap">menu
+      <ul>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+      </ul>
+    </li>
+  </nav>
+
+</header>
+<script>
+  const $header = document.querySelector('header');
+
+  $header.addEventListener('mouseover', () => {
+    $header.style.height = '116px';
+  })
+  $header.addEventListener('mouseleave', () => {
+    $header.style.height = '30px';
+  })
+</script>
+</body>
+</html>
